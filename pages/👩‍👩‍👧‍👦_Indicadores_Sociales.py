@@ -29,7 +29,8 @@ def intro(guide):
     with st.expander("Guía de los indicadores"):
         st.table(guide)
 
-
+st.sidebar.title("Menú")
+st.sidebar.image("./mex.png")
 data = load_data("./data/Social.csv")
 # st.dataframe(data["Series Name"].unique())
 guide = social_guide()
