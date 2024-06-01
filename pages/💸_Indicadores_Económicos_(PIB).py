@@ -24,7 +24,8 @@ def intro(guide):
     with st.expander("Guía de los indicadores"):
         st.table(guide)
 
-
+st.sidebar.title("Menú")
+st.sidebar.image("mex.png")
 data = load_data("./data/PIB.csv")
 guide = pib_guide()
 intro(guide)
